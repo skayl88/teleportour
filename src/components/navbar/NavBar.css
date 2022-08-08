@@ -1,0 +1,64 @@
+ul li a::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease 0s;
+  top: 35px;
+  left: 50%;
+  border-top: solid 2px #fff;
+  width: 0;
+  text-align: center;
+}
+ul li a:hover::after {
+  transition: all 0.3s ease 0s;
+  left: 0;
+  border-top: solid 2px #fff;
+  width: 100%;
+}
+ul li a.active {
+  opacity: 1;
+}
+ul li a.active::after {
+  border-top: solid 1px #fff;
+  left: 0;
+  width: 100%;
+}
+ul {
+  display: flex;
+  padding-right: 34px;
+  padding-left: 0;
+  width: 50vh;
+  display: flex;
+  justify-content: space-between;
+  width: 50vw;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+ul a {
+  opacity: 0.7;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  font-size: 1.7rem;
+}
+ul a:hover {
+  opacity: 1;
+}
+
+li {
+  font-size: 20px;
+  margin-right: calc(1.5rem * var(1));
+  margin-left: calc(1.5rem * calc(1 - var(1)));
+}
+.navbarMobile {
+  display: none;
+  position: relative;
+  right: auto;
+  top: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  .navbarMobile {
+    display: none;
+  }
+}

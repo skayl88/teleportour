@@ -1,0 +1,28 @@
+.wraper {
+  height: 100vh;
+  color: #fff;
+  flex: 1 1 100%;
+}
+.AboutProducts {
+  max-width: 960px;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.AboutProducts h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.AboutProducts p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 1.5em;
+  text-align: left;
+}
+.body {
+  padding: 100px 50px 0 30px;
+}

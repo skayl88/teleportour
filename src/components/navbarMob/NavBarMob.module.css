@@ -1,0 +1,33 @@
+@media screen and (max-width: 1050px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+  }
+  .navbarMobile ul li {
+    text-align: start;
+  }
+  .navbarMobile {
+    display: block;
+    position: fixed;
+    top: 6rem;
+    right: 44px;
+    z-index: 2;
+  }
+  .navbarMobile ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    text-align: start;
+    padding-right: 0;
+  }
+  .navbarMobile.isOpen ul li {
+    margin-bottom: 10px;
+    text-align: start;
+  }
+}

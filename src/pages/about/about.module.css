@@ -1,0 +1,22 @@
+.about {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.about_wraper {
+  width: 100%;
+  position: relative;
+  padding-top: 100vh;
+}
+.main_text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+
+  width: 100vw;
+  transform: translateX(-50%);
+  max-width: 58rem;
+}
+.block {
+  text-align: start;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}

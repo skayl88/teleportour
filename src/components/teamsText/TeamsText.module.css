@@ -1,0 +1,19 @@
+.svg1 {
+  fill: #564c4d;
+  fill: none;
+  stroke-width: 2px;
+  stroke: rgb(255, 255, 255);
+}
+.content {
+  display: flex;
+  max-width: 800px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10vh 30px 120px 0;
+}
+@media screen and (max-width: 1050px) {
+  .content {
+    padding: 10vh 10px 120px 10px;
+  }
+}

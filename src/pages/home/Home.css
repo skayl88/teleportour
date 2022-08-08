@@ -1,0 +1,43 @@
+.circle .foreground {
+  fill: transparent;
+  stroke-dasharray: 1030;
+  stroke-dashoffset: 1030;
+  stroke: #ffffff;
+
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+  transition: all 800ms ease;
+}
+
+.circle {
+  position: absolute;
+  top: -90px;
+  left: 170px;
+  height: 328px;
+  width: 328px;
+  pointer-events: none;
+  transform: scale(2.3) rotateX(60deg) rotateZ(-70deg);
+}
+.svg-container {
+  height: 328px;
+  position: relative;
+  width: 328px;
+}
+
+.circle .foreground {
+  animation: maskBorder 1.9s;
+  animation-delay: 0.5s;
+}
+@keyframes maskBorder {
+  0% {
+    stroke-dashoffset: 900;
+    transform: rotate(270deg);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: rotate(-80deg);
+    stroke-dashoffset: 1030;
+  }
+}
