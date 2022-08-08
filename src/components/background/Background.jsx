@@ -12,6 +12,8 @@ export default function Backgrond() {
         muted
         autoPlay
         loop
+        playsInline
+        preload="auto"
       ></video>
     </>
   );
