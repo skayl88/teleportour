@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./AboutProducts.module.css";
 import { NavBarMob } from "../../components/navbarMob/NavBarMob";
 import { motion, AnimatePresence } from "framer-motion";
+import video from "./promo.mp4";
 export const AboutProducts = () => {
   //get isOpen from NavBarMob
 
@@ -40,15 +41,9 @@ export const AboutProducts = () => {
             <div className={classes.title}>
               <h2>How it Works?</h2>
             </div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/PmcXlYk6Mco"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <video width="100%" height="100%" controls>
+              <source src={video} type="video/mp4"></source>
+            </video>
             <div className={classes.text}>
               <p>
                 The local guides make live streams from their locations using
