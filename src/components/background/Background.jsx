@@ -14,11 +14,11 @@ export default function Backgrond() {
         playsInline
         preload="auto"
       >
+        <source src={backgroundWebm} type='video/webm; codecs="vp8, vorbis"' />
         <source
           src={background}
           type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
         />
-        <source src={backgroundWebm} type='video/webm; codecs="vp8, vorbis"' />
       </video>
     </>
   );
