@@ -40,6 +40,14 @@ export const NavBarMob = ({ isOpen, setOpen }) => {
             </NavLink>
           </li>
           <li>
+            <li>
+              <NavLink
+                to="/How-it-works"
+                className={({ isActive }) => (isActive ? "active" : "none")}
+              >
+                How it Works
+              </NavLink>
+            </li>
             <NavLink
               to="/About"
               className={({ isActive }) => (isActive ? "active" : "none")}

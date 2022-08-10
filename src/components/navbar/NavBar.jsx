@@ -19,6 +19,14 @@ export const NavBar = () => {
           </li>
           <li>
             <NavLink
+              to="/How-it-works"
+              className={({ isActive }) => (isActive ? "active" : "none")}
+            >
+              How it Works
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
               to="/About"
               className={({ isActive }) => (isActive ? "active" : "none")}
             >
@@ -30,7 +38,7 @@ export const NavBar = () => {
               to="/teams"
               className={({ isActive }) => (isActive ? "active" : "none")}
             >
-              Teams
+              Team
             </NavLink>
           </li>
           <li>

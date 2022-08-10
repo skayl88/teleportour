@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence, filterProps } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import classes from "./TeamsPhoto.module.css";
 
 const PhotoAnimation = {
@@ -24,9 +24,7 @@ export const TeamsPhoto = ({ photo, id, isImage, setImage, ...props }) => {
   useEffect(() => {
     if (isImage == id) {
       setIsPhoto(true);
-      console.log(2);
     } else {
-      console.log(isImage);
       setIsPhoto(false);
     }
   }, [isImage, id]);
@@ -35,7 +33,6 @@ export const TeamsPhoto = ({ photo, id, isImage, setImage, ...props }) => {
       <motion.img
         src={photo}
         alt=""
-        className={String(isPhoto)}
         variants={PhotoAnimation}
         initial="hidden"
         animate={isPhoto ? "visible" : "hidden"}

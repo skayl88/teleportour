@@ -1,31 +1,59 @@
 import React from "react";
 import classes from "./AboutProducts.module.css";
 import { NavBarMob } from "../../components/navbarMob/NavBarMob";
-
+import { motion, AnimatePresence } from "framer-motion";
 export const AboutProducts = () => {
   //get isOpen from NavBarMob
-
 
   let isMobile = false;
   if (window.innerWidth < 1050) {
     isMobile = true;
   }
-  console.log(isMobile);
 
+  const ContainerAnimation = {
+    hidden: {
+      opacity: 0,
+      transition: {
+        duration: 0.3,
+      },
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.3,
+        duration: 1.5,
+      },
+    },
+  };
   return (
-    
     <div className="content_page">
       <div className={classes.wraper}>
         <div className={classes.main}>
-          <div className={classes.AboutProducts}>
+          <motion.div
+            className={classes.AboutProducts}
+            variants={ContainerAnimation}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            transition={{}}
+          >
             <div className={classes.title}>
               <h2>How it Works?</h2>
             </div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/PmcXlYk6Mco"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
             <div className={classes.text}>
               <p>
-                Here is how it works: the local guides make live streams from
-                their locations using 360 cameras. They show unique places, tell
-                stories, and interact with the audience while broadcasting.
+                The local guides make live streams from their locations using
+                360 cameras. They show unique places, tell stories, and interact
+                with the audience while broadcasting.
               </p>
               <p>
                 Remote travelers from any other locations (at the same time) can
@@ -58,7 +86,7 @@ export const AboutProducts = () => {
                 consider. For more details contact us.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

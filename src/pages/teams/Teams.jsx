@@ -9,7 +9,7 @@ import { TeamsPhoto } from "../../components/teamsPhoto/TeamsPhoto";
 
 export const Team = () => {
   let [isImage, setImage] = React.useState(0);
-  let images = [photo2, photo3, photo1, photo2, photo1, photo2];
+  let images = [photo2, photo3, , , , photo1];
   let step = [
     {
       title: "Stanislav Stepanov - CEO",
@@ -34,6 +34,11 @@ export const Team = () => {
       text: "PhD in Computer Science. 360 live streaming industry recognized inventor, 33 publications, 23 patents, 16 projects ",
     },
     {
+      title:
+        "Olesia Kuzmina - Head of Administration - French Office / Assistant to the CEO / Content creator",
+      text: "Olesia is a professor of foreign languages and cultures. She began her professional career as a school teacher, and her discipline was French as a foreign language for children with physical and mental disabilities. She worked as a personal interpreter for the famous French pastry chef Frédéric Andrieu and as a PR director for a concert hall. She has more than 10 years of experience in the French and Luxembourg Embassies in Moscow as an administrative officer and assistant to the vice-council. Olesia is responsible for Teleportour's connection to France with lightness and enthusiasm, as well as performing the function of French-speaking networking for the company's growth.",
+    },
+    {
       title: "Evgeniy Shendrygin - Senior Software Developer.",
       text: "Master’s degree in information systems and technologies. 8 years in software development and VR, 13 projects.",
     },
@@ -55,7 +60,6 @@ export const Team = () => {
         let lastVewpPocent = 0;
         if (id && lastId !== id) {
           lastVewpPocent = entry.intersectionRect;
-          console.log(lastVewpPocent);
 
           setImage(id);
           entry.target.classList.add("active");

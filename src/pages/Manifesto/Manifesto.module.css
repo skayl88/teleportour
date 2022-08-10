@@ -12,7 +12,7 @@
     transparent calc(100% - 100px)
   );
 }
-.AboutProducts {
+.Manifesto {
   max-width: 960px;
   margin: auto;
   padding-bottom: 150px;
@@ -20,17 +20,21 @@
   padding-right: 20px;
 }
 
-.AboutProducts h2 {
+.Manifesto h2 {
   font-size: 2rem;
   text-align: center;
   padding-top: 100px;
   padding-bottom: 40px;
 }
-.AboutProducts p {
+.Manifesto p {
   font-size: 1.5rem;
   text-align: center;
   margin-top: 1.5em;
   text-align: left;
+}
+.Manifesto .bold {
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 .body {
   padding: 100px 50px 0 30px;

@@ -34,7 +34,7 @@ const Home = () => {
       <div className={classes.title}>
         <h1>TELEPORTOUR</h1>
         <p>Enjoying travel becomes possible even without leaving home. </p>
-        <NavLink to="/How-it-works">Learn more</NavLink>
+        <NavLink to="/Manifesto">Learn more</NavLink>
         <svg className="circle" xmlns="http://www.w3.org/2000/svg">
           <g>
             <ellipse
