@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "arial";
+  font-family: "roboto", sans-serif;
   margin: 0;
   font-size: 16px;
 }
@@ -19,6 +19,7 @@ ul li {
 }
 
 p {
+  font-weight: 300;
   color: #fff;
 }
 ::-webkit-scrollbar {
