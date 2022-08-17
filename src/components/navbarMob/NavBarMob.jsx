@@ -60,7 +60,7 @@ export const NavBarMob = ({ isOpen, setOpen }) => {
               to="/teams"
               className={({ isActive }) => (isActive ? "active" : "none")}
             >
-              Teams
+              Team
             </NavLink>
           </li>
           <li>
