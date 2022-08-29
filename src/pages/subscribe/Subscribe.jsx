@@ -39,27 +39,34 @@ export const Subscribe = () => {
           >
             <h1>Sign up</h1>
             <form action="submin">
-              <input
-                className={classes.fild_sub}
-                type="text"
-                name="FirstName"
-                placeholder="First name *"
-                id="FirstName"
-              />
-              <input
-                className={classes.fild_sub}
-                type="text"
-                name="firstName"
-                placeholder="Second name *"
-                id="secondName"
-              />
-              <input
-                className={classes.fild_sub}
-                type="text"
-                name="secondName"
-                placeholder="First name *"
-                id="FirstName23"
-              />
+              <fieldset className={classes.fildset_sub}>
+                <input
+                  className={classes.fild_sub}
+                  type="text"
+                  name="FirstName"
+                  placeholder="First name *"
+                  id="FirstName"
+                />
+              </fieldset>
+              <fieldset className={classes.fildset_sub}>
+                <input
+                  className={classes.fild_sub}
+                  type="text"
+                  name="firstName"
+                  placeholder="Second name *"
+                  id="secondName"
+                />{" "}
+              </fieldset>{" "}
+              <fieldset className={classes.fildset_sub}>
+                <input
+                  className={classes.fild_sub}
+                  type="mail"
+                  name="mail"
+                  placeholder="Email *"
+                  id="Email"
+                />
+              </fieldset>
+              <button className={classes.sub_button}>Submit</button>
             </form>
           </motion.div>
         </div>

@@ -15,3 +15,28 @@
   line-height: 20px;
   transition: border-color 0.15s ease-in-out;
 }
+.fildset_sub {
+  all: unset;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.wraper {
+  width: 70%;
+  max-width: 800px;
+}
+.sub_button {
+  all: unset;
+  height: 48px;
+  padding: 0 50px 2px;
+  border: 1px solid #fff;
+  margin-top: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: ITC Avant Garde Gothic Std, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
