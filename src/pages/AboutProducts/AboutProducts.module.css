@@ -40,4 +40,7 @@
     -webkit-mask-image: linear-gradient(transparent 65px, #000 110px);
     mask-image: linear-gradient(transparent 65px, #000 110px);
   }
+  .AboutProducts p {
+    font-size: 1rem;
+  }
 }

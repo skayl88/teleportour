@@ -1,24 +1,29 @@
 import React from "react";
 import classes from "./Teams.module.css";
 import photo1 from "./Kuzmina.jpg";
-import photo2 from "./Stepanov.jpg";
+import photo2 from "./Stanislav.jpg";
 import photo3 from "./Ekaterina.jpg";
+import photo4 from "./Ophelie.jpg";
 import { TeamsText } from "../../components/teamsText/TeamsText";
 import { motion, AnimatePresence } from "framer-motion";
 import { TeamsPhoto } from "../../components/teamsPhoto/TeamsPhoto";
 
 export const Team = () => {
   let [isImage, setImage] = React.useState(0);
-  let images = [photo2, photo3, , , , photo1];
+  let images = [photo2, photo3, photo4, , , , photo1];
   let step = [
     {
       title: "Stanislav Stepanov - CEO",
       text: "Stanislav says he is a real authentic gipsy as he is always somewhere “on his way”. In winter you can normally find him on Alpine ski slopes, in summer - riding his 23-years-old Mercedes across Europe where he is currently involved in a number of collaborative creative projects for TELEPORTOUR network strengthening and business growth.  ",
-      body: " An expert in implementation and scaling of innovation technologies and building relationships with decision makers, Stanislav has over 20 years expertise in International Business Development running startups, imagining, creating, and reimagining the ways of synergetic combinations of current solutions and disruptive technologies in the fields of Oil&Gas, Aerospace, and Wild Nature protection. His business leader career consists of ups and downs, but is based on the basic spiritual principle of always moving forward and never giving up. His first ever business back in 1990’s was a local travel magazine with printed tirage of 15000 copies where local travel businesses and agencies published paid advertising. “It is a strange fact and a magic that after so many years in my business adventure I’m back to travel-related thematics with a revolutionary product, which makes me feel absolutely happy!” - he says. Thanks to his diversified network and leadership skills, he was honored in getting the right people joining the journey from the very beginning. He was able to enthuse video content creators and experienced video producers, software engineers, multicultural communication and interaction professionals, well-known marketers, famous inventors - to create the core team TELEPORTOUR.",
+      body: "An expert in implementation and scaling of innovation technologies and building relationships with decision makers, Stanislav has over 20 years expertise in International Business Development running startups, imagining, creating, and reimagining the ways of synergetic combinations of current solutions and disruptive technologies in the fields of Oil&Gas, Aerospace, and Wild Nature protection. His business leader career consists of ups and downs, but is based on the basic spiritual principle of always moving forward and never giving up. His first ever business back in 1990’s was a local travel magazine with printed tirage of 15000 copies where local travel businesses and agencies published paid advertising. ",
     },
     {
       title: " Ekaterina Ustinova - CULTURE",
       text: "Ekaterina is our leader in cross-cultural communication - an important segment for our multicultural team, and for our growing worldwide community of travel content creators. Her strongest expertise consists of the synergy of legal aspects in social behavior and peculiarities in multilingual community interaction. Ekaterina has a PhD degree in Economics and a Doctor degree in Education. Her work experience consists of lecturing in some leading universities including Moscow State Institute of International Relationship (University). Her work experience in human research is more than 20 years.",
+    },
+    {
+      title: "OPHELIE DAVID - SPORT COMMUNITIES and EVENTS",
+      text: "Ophelie is one of the legendary French athletes in Alpine skiing and a dominant woman who is involved in a variety of socially important projects,  focused on social interest to the healthy lifestyle. She is a Co-founder of OSE & Co. French freestyle SkiX racer (2003-2018), Winner of a world championship and four consecutive Winter X Games. 7 World Cup overall Winner. ",
     },
 
     {

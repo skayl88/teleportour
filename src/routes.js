@@ -3,6 +3,7 @@ import { About } from "./pages/about/About";
 import { AboutProducts } from "./pages/AboutProducts/AboutProducts";
 import Home from "./pages/home/Home";
 import { Manifesto } from "./pages/Manifesto/Manifesto";
+import { Subscribe } from "./pages/subscribe/Subscribe";
 import { Story } from "./pages/story/Story";
 import { Team } from "./pages/teams/Teams";
 
@@ -20,16 +21,19 @@ export const allRoutes = [
         Component: <Team />,
     },
     {
-        path: '/Our-story',
+        path: '/our-story',
         Component: <Story />,
     },
     {
-        path: '/How-it-works',
+        path: '/how-it-works',
         Component: <AboutProducts />,
     },
     {
-        path: '/Manifesto',
+        path: '/manifesto',
         Component: <Manifesto />,
+    }, {
+        path: '/subscribe',
+        Component: <Subscribe />
     },
     {
         path: '*',

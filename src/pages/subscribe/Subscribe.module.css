@@ -1,0 +1,17 @@
+.subscribe {
+}
+.fild_sub {
+  all: unset;
+  width: 100%;
+  text-align: start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-bottom: 0.5px solid #5e5e5e;
+  font-family: ITC Avant Garde Gothic Std, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  transition: border-color 0.15s ease-in-out;
+}

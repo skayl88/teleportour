@@ -65,6 +65,7 @@ export const Manifesto = () => {
                 We are here so that anyone can be anywhere, anytime they want to
                 be
               </p>
+              <a href="/subscribe"> Subscribe</a>
             </div>
           </motion.div>
         </div>
