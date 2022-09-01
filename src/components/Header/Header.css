@@ -21,13 +21,27 @@ header p {
 button {
   display: none;
 }
+.logo {
+  margin-left: 40px;
+}
+.logo img {
+  max-width: 60px;
+}
 @media screen and (max-width: 1050px) {
+  .logo img {
+    max-width: 30px;
+  }
+  .logo {
+    margin-top: 0px;
+    margin-left: 20px;
+  }
   header {
     top: 1rem;
     bottom: auto;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 0;
+    align-items: center;
   }
   button {
     background-color: transparent;

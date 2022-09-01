@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Manifesto.module.css";
-import { NavBarMob } from "../../components/navbarMob/NavBarMob";
+
+import { Signup } from "../../components/button/signup/Signup";
 import { motion, AnimatePresence } from "framer-motion";
 export const Manifesto = () => {
   //get isOpen from NavBarMob
@@ -65,7 +66,10 @@ export const Manifesto = () => {
                 We are here so that anyone can be anywhere, anytime they want to
                 be
               </p>
-              <a href="/subscribe"> Subscribe</a>
+            </div>
+
+            <div className={classes.signup}>
+              <Signup></Signup>
             </div>
           </motion.div>
         </div>

@@ -21,6 +21,7 @@
     top: 6rem;
     right: 44px;
     z-index: 2;
+    opacity: 0;
   }
   .navbarMobile ul {
     flex-direction: column;
@@ -32,5 +33,14 @@
   .navbarMobile.isOpen ul li {
     margin-bottom: 10px;
     text-align: start;
+  }
+  .signup {
+    z-index: 100;
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    pointer-events: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
   }
 }

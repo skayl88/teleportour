@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import classes from "./NavBarMob.module.css";
+import { Signup } from "../../components/button/signup/Signup";
 import { motion } from "framer-motion";
 const variants = {
   hidden: {
@@ -28,7 +29,6 @@ export const NavBarMob = ({ isOpen, setOpen }) => {
         <ul
           onClick={() => {
             setOpen(false);
-            console.log(1212);
           }}
         >
           <li>
@@ -73,12 +73,19 @@ export const NavBarMob = ({ isOpen, setOpen }) => {
           </li>
         </ul>
       </motion.nav>
+      <div
+        className={classes.signup}
+        onClick={() => {
+          setOpen(false);
+        }}
+      >
+        {isOpen ? <Signup></Signup> : ""}
+      </div>
       {isOpen ? (
         <div
           className={classes.overlay}
           onClick={() => {
             setOpen(false);
-            console.log(1212);
           }}
         ></div>
       ) : null}
